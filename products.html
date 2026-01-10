@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Produk | Sanli Motor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-inner">
+    <div class="logo">Sanli Motor</div>
+
+    <button class="burger" id="burger">&#9776;</button>
+
+    <nav class="nav-menu" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="about.html">about</a>
+      <a href="products.html">produk</a>
+      <a href="contact.html">contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <img src="img/kawasaki-greentech.jpg" alt="Sanli Motor Perawang">
+  <div class="page-hero-text">
+  <h1>Produk Kami</h1>
+  <p>Unit kendaraan Baru & Bekas</p>
+  </div>
+</section>
+
+<section class="home-intro fade-up">
+  <h2>Unit Tersedia</h2>
+</section>
+
+<!-- FILTER -->
+<section class="products">
+<div class="filter-scroll">
+  <button class="filter-btn active" data-filter="all">Semua</button>
+  <button class="filter-btn" data-filter="motor-baru">Motor Baru</button>
+  <button class="filter-btn" data-filter="motor-bekas">Motor Bekas</button>
+  <button class="filter-btn" data-filter="mobil">Mobil</button>
+  <button class="filter-btn" data-filter="listrik">Sepeda Listrik</button>
+  <button class="filter-btn" data-filter="dana">Solusi Dana</button>
+</div>
+
+
+  <!-- GRID -->
+  <div class="product-grid">
+
+    <!-- CARD 1 -->
+    <div class="product-card" data-category="baru">
+      <span class="badge ready">READY</span>
+      <img src="img/produk1.jpg" alt="Kawasaki KLX 150">
+      <h3>Kawasaki KLX 150</h3>
+      <p class="price">Unit Baru</p>
+      <a class="btn-wa"
+         href="https://wa.me/6285263925932">
+         Chat WhatsApp
+      </a>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="product-card" data-category="bekas">
+      <span class="badge promo">PROMO</span>
+      <img src="img/produk2.jpg" alt="Motor Bekas Pilihan">
+      <h3>Motor Bekas Pilihan</h3>
+      <p class="price">Kondisi Terjamin</p>
+      <a class="btn-wa"
+         href="https://wa.me/6285263925932">
+         Chat WhatsApp
+      </a>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="product-card" data-category="bekas">
+      <span class="badge sold">SOLD</span>
+      <img src="img/produk3.jpg" alt="Motor Harian">
+      <h3>Motor Harian</h3>
+      <p class="price">Terjual</p>
+      <a class="btn-wa disabled">Terjual</a>
+    </div>
+
+  </div>
+</section>
+
+<script>
+const burger = document.getElementById("burger");
+const navMenu = document.getElementById("navMenu");
+burger.onclick = () => navMenu.classList.toggle("open");
+</script>
+<footer class="footer">
+  <div class="footer-inner">
+
+    <div class="footer-col">
+      <h4>Sanli Motor</h4>
+      <p>
+        Dealer motor baru & bekas terpercaya di Perawang.
+        Melayani jual beli, tukar tambah, dan proses cepat.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Alamat</h4>
+      <p>
+        Jl. Pipa Km 9, Malioboro<br>
+        Perawang, Kec. Tualang<br>
+        Kabupaten Siak, Riau
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Kontak</h4>
+      <p>Buka setiap hari<br>24 Jam</p>
+      <a href="https://wa.me/6285263925932"
+         target="_blank"
+         class="btn-wa footer-wa">
+        WhatsApp Admin
+      </a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © <span id="year"></span> Sanli Motor • All Rights Reserved
+  </div>
+</footer>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<script src="js/slider.js"></script>
+<script src="js/filter.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>
+
+

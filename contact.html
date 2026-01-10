@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kontak | Sanli Motor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-inner">
+    <div class="logo">Sanli Motor</div>
+
+    <button class="burger" id="burger">&#9776;</button>
+
+    <nav class="nav-menu" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="about.html">about</a>
+      <a href="products.html">produk</a>
+      <a href="contact.html">contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="admin-banner">
+  <div class="admin-card">
+    <img src="img/admin.jpg" alt="Admin Sanli Motor">
+
+    <div class="admin-text">
+      <h1>Kontak Kami</h1>
+      <p>Hubungi Admin Sanli Motor</p>
+      <span class="badge-admin">Admin Resmi</span>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- CONTENT -->
+<section class="contact">
+  <div class="contact-grid">
+
+    <!-- INFO -->
+    <div class="contact-card">
+      <h3>Informasi Dealer</h3>
+      <p><strong>Nama:</strong><br>Kawasaki GreenTech Perawang (Sanli Motor)</p>
+
+      <p><strong>Alamat:</strong><br>
+      Jl. Pipa No.Km 9, Malioboro,<br>
+      Perawang, Kec. Tualang,<br>
+      Kabupaten Siak, Riau 28772
+      </p>
+
+      <p><strong>Jam Operasional:</strong><br>
+      Setiap Hari • 24 Jam
+      </p>
+
+      <a href="https://wa.me/6285263925932" class="btn-wa big">
+        Hubungi via WhatsApp
+      </a>
+    </div>
+
+    <!-- MAP -->
+    <div class="contact-card">
+      <h3>Lokasi Kami</h3>
+      <iframe
+        src="https://www.google.com/maps?q=Kawasaki%20Greentech%20Perawang&output=embed"
+        loading="lazy">
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+<script>
+const burger = document.getElementById("burger");
+const navMenu = document.getElementById("navMenu");
+burger.onclick = () => navMenu.classList.toggle("open");
+</script>
+<footer class="footer">
+  <div class="footer-inner">
+
+    <div class="footer-col">
+      <h4>Sanli Motor</h4>
+      <p>
+        Dealer motor baru & bekas terpercaya di Perawang.
+        Melayani jual beli, tukar tambah, dan proses cepat.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Alamat</h4>
+      <p>
+        Jl. Pipa Km 9, Malioboro<br>
+        Perawang, Kec. Tualang<br>
+        Kabupaten Siak, Riau
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Kontak</h4>
+      <p>Buka setiap hari<br>24 Jam</p>
+      <a href="https://wa.me/6285263925932"
+         target="_blank"
+         class="btn-wa footer-wa">
+        WhatsApp Admin
+      </a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © <span id="year"></span> Sanli Motor • All Rights Reserved
+  </div>
+</footer>
+<script>
+const burger = document.getElementById("burger");
+const navMenu = document.getElementById("navMenu");
+
+burger.onclick = () => {
+  navMenu.classList.toggle("show");
+};
+</script>
+
+<script src="js/slider.js"></script>
+<script src="js/filter.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>
